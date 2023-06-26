@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Finekraft UI Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## System requirements.
 
-## Available Scripts
+1.Node.js:
+React projects require Node.js, which is a JavaScript runtime environment. You'll need to install Node.js on your system.
 
-In the project directory, you can run:
+[Link to download](https://nodejs.org/en/download)
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Installation](#installation)
+- [Background](#background)
+- [Usage](#usage)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Go to the project's directory
+1. Install dependencies: `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Background
 
-### `npm run build`
+Task is to create the above table UI using React JS in which
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. User should be able to search any text in the search bar on the top right any of the column fields to get the desired result rows.
+1. User should be able to sort the table rows based on the columns by clicking on the header as shown in the image. Columns should have clear indicators whether the column is unsorted, ascending or descending.
+1. User should be able to view the number of rows as per the page size selected in the dropdown. They can click on the pagination buttons to navigate through the pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. In Projects src/config.config.js file add the initial config
 
-### `npm run eject`
+   > API_URL => For Connecting to backend service ['http://localhost:8000']
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   > SERVER_PAGINATION => Pagination on client side/server side [true/false]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Make sure backend service is up and runnig.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Go to the project's directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Start the development server: `npm start`.
 
-## Learn More
+## Test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Go to the project's directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start test : `npm run test`.
 
-### Code Splitting
+## Screen Shots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. All
+   ![Screenshot](/src/assests/images/1.png "This is a sample image.")
 
-### Analyzing the Bundle Size
+1. Search
+   ![Screenshot](/src/assests/images/2.png "This is a sample image.")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. No of entries Change
+   ![Screenshot](/src/assests/images/3.png "This is a sample image.")
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Postion Column Sorted
+   ![Screenshot](/src/assests/images/4.png "This is a sample image.")

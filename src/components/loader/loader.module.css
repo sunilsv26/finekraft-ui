@@ -1,0 +1,30 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.background .spinner {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
